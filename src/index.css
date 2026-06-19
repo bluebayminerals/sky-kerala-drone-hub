@@ -1,0 +1,46 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+  @apply transition-colors duration-300 ease-out;
+}
+
+body {
+  @apply bg-black text-white font-sans;
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-industrial-gray;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-acid-green rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-acid-green-dark;
+}
+
+/* Button reset */
+button {
+  @apply cursor-pointer;
+}
+
+/* Input styling */
+input,
+textarea,
+select {
+  @apply bg-industrial-gray border border-industrial-gray-light text-white px-3 py-2 rounded text-sm focus:outline-none focus:ring-2 focus:ring-acid-green focus:border-transparent;
+}
+
+/* Focus visible for accessibility */
+*:focus-visible {
+  @apply ring-2 ring-acid-green;
+}

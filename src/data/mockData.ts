@@ -1,0 +1,102 @@
+import { Artist, Event } from '../types';
+
+export const artists: Artist[] = [
+  {
+    id: 'artist-1',
+    stageName: 'VEXA',
+    subGenres: ['Melodic Techno', 'Deep House'],
+    soundSignature: 'Deep, emotive grooves layered with kinetic synth lines. Hypnotic builds that captivate warehouse crowds.',
+    profileImage: 'https://images.unsplash.com/photo-1511379938547-c1f69b13d835?w=400&h=400&fit=crop',
+    previewTrack: 'https://soundcloud.com/vexa/midnight-rituals',
+    minFee: 45000,
+    setDuration: '3-4 hours',
+    priceCategory: 'premium',
+  },
+  {
+    id: 'artist-2',
+    stageName: 'KRYPTON',
+    subGenres: ['EBM', 'Industrial Techno', 'Peak Time'],
+    soundSignature: 'Hard industrial rhythm with dark, dystopian atmospheres. Raw energy meets precision engineering in every drop.',
+    profileImage: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=400&fit=crop',
+    previewTrack: 'https://soundcloud.com/krypton/neon-void',
+    minFee: 55000,
+    setDuration: '4-5 hours',
+    priceCategory: 'premium',
+  },
+  {
+    id: 'artist-3',
+    stageName: 'LUNA_NOIR',
+    subGenres: ['Minimal', 'Psy-Trance', 'Melodic Techno'],
+    soundSignature: 'Sparse, hypnotic minimal grooves with celestial psy elements. Builds tension then releases cosmic energy.',
+    profileImage: 'https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=400&h=400&fit=crop',
+    previewTrack: 'https://soundcloud.com/lunanoir/astral-phase',
+    minFee: 38000,
+    setDuration: '3-4 hours',
+    priceCategory: 'standard',
+  },
+  {
+    id: 'artist-4',
+    stageName: 'CIPHER',
+    subGenres: ['Peak Time', 'Hard Techno', 'Melodic Techno'],
+    soundSignature: 'Peak-time euphoria with crystalline melodies cutting through driving 138 BPM foundations.',
+    profileImage: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&h=400&fit=crop',
+    previewTrack: 'https://soundcloud.com/cipher/peak-geometry',
+    minFee: 50000,
+    setDuration: '4-5 hours',
+    priceCategory: 'premium',
+  },
+  {
+    id: 'artist-5',
+    stageName: 'IRIS',
+    subGenres: ['Deep House', 'Ambient Techno', 'Minimal'],
+    soundSignature: 'Intimate deep house grooves with ambient textures. Perfect for sunset ceremonies and intimate gatherings.',
+    profileImage: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=400&h=400&fit=crop',
+    previewTrack: 'https://soundcloud.com/iris/golden-hour',
+    minFee: 32000,
+    setDuration: '2-3 hours',
+    priceCategory: 'standard',
+  },
+];
+
+export const events: Event[] = [
+  {
+    id: 'event-1',
+    title: 'Sundowner Gathering',
+    date: 'Friday, June 27, 2026',
+    day: 'Friday',
+    description: 'Exclusive sunset electronic experience. Exact coordinates disclosed to ticket holders 4 hours before kickoff. Warehouse transformation in Fort Kochi. Curated selection of melodic techno and deep house.',
+    venuType: 'Secret Villa',
+    capacity: 150,
+    claimed: 114,
+    genre: 'Deep House, Melodic Techno',
+    coordinates: '9.9673° N, 76.2530° E',
+  },
+  {
+    id: 'event-2',
+    title: 'Warehouse Session',
+    date: 'Saturday, June 28, 2026',
+    day: 'Saturday',
+    description: 'Hard industrial rhythm meets dark minimal techno and EBM. Raw, uncompromising warehouse aesthetic. 6-hour journey through the depths of electronic consciousness.',
+    venuType: 'Warehouse',
+    capacity: 200,
+    claimed: 167,
+    genre: 'EBM, Hard Techno, Industrial',
+    coordinates: '9.9816° N, 76.2613° E',
+  },
+  {
+    id: 'event-3',
+    title: 'Minimal Horizons',
+    date: 'Saturday, July 5, 2026',
+    day: 'Saturday',
+    description: 'Psy-trance and minimal techno journey through the night. Open-air sundowner transforming into late-night underground experience.',
+    venuType: 'Private Club',
+    capacity: 120,
+    claimed: 89,
+    genre: 'Minimal, Psy-Trance',
+    coordinates: '9.9578° N, 76.2478° E',
+  },
+];
+
+export const genres = ['Melodic Techno', 'Peak Time', 'Minimal', 'EBM', 'Deep House', 'Hard Techno', 'Industrial', 'Psy-Trance'];
+export const durations = ['2-3 hours', '3-4 hours', '4-5 hours', '5+ hours'];
+export const priceCategories = ['budget', 'standard', 'premium'];
