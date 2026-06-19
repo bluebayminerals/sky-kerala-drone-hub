@@ -1,0 +1,50 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+  @apply transition-colors duration-300 ease-out;
+}
+
+body {
+  @apply bg-cloud-white text-storm-gray font-sans;
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-sky-light;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-sky-blue rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-sky-blue;
+}
+
+input,
+textarea,
+select {
+  @apply bg-white border border-slate-200 text-storm-gray px-3 py-2 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-sky-blue focus:border-transparent;
+}
+
+button {
+  @apply cursor-pointer;
+}
+
+*:focus-visible {
+  @apply ring-2 ring-sky-blue;
+}
+
+.weather-card {
+  @apply bg-white rounded-2xl shadow-lg p-6 border border-slate-100 hover:shadow-xl transition-shadow;
+}
+
+.glass-effect {
+  @apply bg-white/80 backdrop-blur-lg rounded-2xl border border-white/20 shadow-xl;
+}
